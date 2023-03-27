@@ -21,6 +21,10 @@
     --darkGray: hsl(0, 0%, 59%);
 }
 
+body {
+    font-family: 'Kumbh-Sans', sans-serif;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -28,7 +32,6 @@ main {
     align-items: center;
     height: 100vh;
 }
-
 /* Media Queries */
 
 
