@@ -21,9 +21,9 @@
 
 body {
     background-color: var(--darkCyan);
-    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
-    font-family: 'Kumbh-Sans', sans-serif;
+    background-size: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -40,6 +40,20 @@ main {
 img {
     display: block;
     max-width: 100%;
+}
+
+#bg-top {
+    position: absolute;
+    top: -20%;
+    left: -45%;
+    z-index: -1;
+}
+
+#bg-bottom {
+    position: absolute;
+    bottom: -20%;
+    right: -45%;
+    z-index: -1;
 }
 
 .cardContainer {
@@ -90,7 +104,6 @@ img {
 }
 
 .cardText p {
-    font-family: 'Kumbh-Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: var(--grayishBlue);
@@ -126,7 +139,14 @@ img {
 
 /* Media Queries */
 
+@media screen and (min-width: 1440px) {
+    #bg-top {
+        top: -80%;
+        left: -20%;
+    }
 
-/* Desktop */
-
-/* @media screen and (min-width: 1440px) */
+    #bg-bottom {
+        bottom: -100%;
+        right: -20%;
+    }
+}
