@@ -1,0 +1,37 @@
+/* - Mobile: 375px
+- Desktop: 1440px
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary Colors */
+
+    --darkCyan: hsl(185, 75%, 39%);
+    --desaturatedBlue: hsl(229, 23%, 23%);
+    --grayishBlue: hsl(227, 10%, 46%);
+
+    /* Neutral Colors */
+
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Media Queries */
+
+
+/* Desktop */
+
+/* @media screen and (min-width: 1440px) */
